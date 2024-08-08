@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h2> Виртуальная Библиотека</h2>
+    <button id="addNewBook">Добавить книгу</button>
+    </header>
+
+    <main>
+    <div id="bookCard"></div>
+    </main>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="modal" class="modal">
+        <div class="content">
+            <span class="close">&times;</span>
+
+            <h3>Заполните форму для того, чтобы добавить книгу</h3>
+
+            <form id="forms">
+                <label form="bookName"><p>Название книги:</p></label>
+                <input type="text" id="bookName" name="name" required>
+
+                <label form="bookAuthor"><p>Автор:</p></label>
+                <input type="text" id="bookAuthor" name="author" required>
+
+                <label form="bookPages"><p>Количество страниц:</p></label>
+                <input type="text" id="bookPages" name="pages" required>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
